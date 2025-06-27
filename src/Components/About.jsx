@@ -2,13 +2,23 @@ import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { ImProfile } from "react-icons/im";
 
 import heroImg from '../assets/wave-haikei.svg'
+import definition from '../assets/planning.png'
+import defBg from '../assets/Home.svg'
+import process from '../assets/process.png'
+import leader from '../assets/leader.png'
+import leaderProf from '../assets/supervisorimg.png'
+import teamIcon from '../assets/team-leadership.png'
+import team1 from '../assets/team1.png'
+import team2 from '../assets/team2.png'
+import team3 from '../assets/team3.png'
+import team4 from '../assets/team4.png'
 
 
 export default function About() {
     const teamMates = [
         {
             name: "Sanjida Sarker",
-            porfile: "/src/assets/team1.png",
+            porfile: team1,
             grad: "Bsc in CSE",
             uni: "Uttara University",
             links: {
@@ -19,7 +29,7 @@ export default function About() {
         },
         {
             name: "Miraz Hossain",
-            porfile: "/src/assets/team2.png",
+            porfile: team2,
             grad: "Bsc in CSE",
             uni: "Uttara University",
             links: {
@@ -30,7 +40,7 @@ export default function About() {
         },
         {
             name: "Nurujjaman Nahid",
-            porfile: "/src/assets/team3.png",
+            porfile: team3,
             grad: "Bsc in CSE",
             uni: "Uttara University",
             links: {
@@ -41,7 +51,7 @@ export default function About() {
         },
         {
             name: "Shakawat Hasaan",
-            porfile: "/src/assets/team4.png",
+            porfile: team4,
             grad: "Bsc in CSE",
             uni: "Uttara University",
             links: {
@@ -63,18 +73,18 @@ export default function About() {
                 <div className="flex flex-col gap-5 relative w-full items-end justify-center h-fit shadow rounded-md">
                     <div className="flex flex-col gap-5 p-2 sm:p-4 absolute top-1/2 -translate-y-1/2 left-0 w-full">
                         <div className="flex items-center gap-4">
-                            <img src="/src/assets/planning.png" alt="" className="w-[40px] aspect-square" />
+                            <img src={definition} alt="" className="w-[40px] aspect-square" />
                             <h4 className="text-2xl sm:text-3xl font-semibold" style={{ fontFamily: "Roboto Mono" }}>What Is This App</h4>
                         </div>
                         <p className="text-xs md:text-[16px] max-w-[500px] font-sans" >This web application leverages a deep learning model based on the DEiT (Data-efficient Image Transformer) architecture to detect pneumonia from chest X-ray images. It is designed for rapid, AI-assisted screening and educational use in medical imaging, helping healthcare professionals and learners analyze radiographic data more efficiently.</p>
                     </div>
                     <div className="w-fit h-fit">
-                        <img src="/src/assets/Home.svg" alt="" className="w-[250px] md:w-[300px] opacity-[0.1] md:opacity-[0.3]" />
+                        <img src={defBg} alt="" className="w-[250px] md:w-[300px] opacity-[0.1] md:opacity-[0.3]" />
                     </div>
                 </div>
                 <div className="shadow rounded-md p-2 sm:p-4 space-y-4">
                     <div className="flex items-center gap-4">
-                        <img src="/src/assets/process.png" alt="" className="w-[40px] aspect-square" />
+                        <img src={process} alt="" className="w-[40px] aspect-square" />
                         <h3 className="text-2xl sm:text-3xl font-semibold" style={{ fontFamily: "Roboto Mono" }}>How It Works</h3>
                     </div>
                     <ul className="text-xs md:text-[16px] max-w-[500px] font-sans list-disc pl-5 space-y-2">
@@ -85,13 +95,13 @@ export default function About() {
                 </div>
                 <div className="space-y-4">
                     <div className="flex items-center gap-4 shadow rounded-md p-2 sm:p-4 ">
-                        <img src="/src/assets/leader.png" alt="" className="w-[40px] aspect-square" />
+                        <img src={leader} alt="" className="w-[40px] aspect-square" />
                         <h3 className="text-xl sm:text-2xl font-semibold">Our Supervisor</h3>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4 items-center rounded-md shadow p-2 sm:p-4">
                         <div className="">
-                            <img src="/src/assets/supervisorimg.png" alt="" className="w-[180px]" />
+                            <img src={leaderProf} alt="" className="w-[180px]" />
                         </div>
                         <div className="space-y-2">
                             <h3 className="text-2xl font-semibold" style={{ fontFamily: "Roboto Mono" }}>Md. Wahidur Rahman</h3>
@@ -111,7 +121,7 @@ export default function About() {
                 </div>
                 <div className="space-y-4">
                     <div className="flex items-center gap-4 shadow rounded-md p-2 sm:p-4 ">
-                        <img src="/src/assets/team-leadership.png" alt="" className="w-[40px] aspect-square" />
+                        <img src={teamIcon} alt="" className="w-[40px] aspect-square" />
                         <h3 className="text-xl sm:text-2xl font-semibold">My Team</h3>
                     </div>
 
