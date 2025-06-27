@@ -1,6 +1,8 @@
 import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { ImProfile } from "react-icons/im";
 
+import heroImg from '../assets/wave-haikei.svg'
+
 
 export default function About() {
     const teamMates = [
@@ -53,7 +55,7 @@ export default function About() {
         <div className="bg-[#0066FF] w-full max-w-[1150px] border border-white">
             <div className="relative">
                 <div className="w-full h-full absolute bottom-0 left-0 z-[1] flex items-end">
-                    <img src="/src/assets/wave-haikei.svg" alt="" className="w-full" />
+                    <img src={heroImg} alt="" className="w-full" />
                 </div>
                 <div className="text-7xl pt-[80px] sm:text-9xl md:text-[250px] pb-[80px] sm:pb-[150px] lg:pb-[200px] z-[99] text-center text-white" style={{ textShadow: "10px 0px 5px #003AA9", fontFamily: "Roboto Mono" }}>About</div>
             </div>
