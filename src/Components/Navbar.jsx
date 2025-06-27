@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="w-full h-fit flex items-center justify-center fixed top-0 left-0 z-[10] bg-slate-50 shadow-md">
+    <div className="w-full h-fit flex items-center justify-center fixed top-0 left-0 z-[10] bg-slate-50 shadow-md" style={{fontFamily: "Roboto Mono", fontWeight: 500}}>
       <div className="w-full py-2 px-5 max-w-[1250px]">
       <div className="flex items-center justify-between">
         {/* Logo */}
